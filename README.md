@@ -2,7 +2,7 @@
 
 ## :balloon: Overview
 
-Will help to build any JavaScript oriented project with the support of SASS/CSS fast. Also, since I have omitted the package.json file, it means that your initial build will always contain all the latest dependancied at the time of clone.
+Will help to build any JavaScript oriented project with the support of SASS/CSS fast. Also, since I have omitted the package.json file, it means that your initial build will always contain all the latest dependancied at the time of clone. Also, I hate receiving dependency errors or npm updates. So, I have completely omitted the package.json file.
 
 ## :mega: Features
 
@@ -17,6 +17,7 @@ Here are the reasons you will love this boilerplate:
 - **No need to update the dependencies** - Just follow the quick start quide and you'll be fine.
 - **Use any styling you want** - You can use both CSS or SASS to limitation.
 - **Separate your vendors from your code** - you don't like mixing your code with 3rd party's? Then this is your solution.
+- **Remove Unused Styles** - Purify CSS/SCSS output using [`purgecss-webpack-plugin`]("https://purgecss.com/plugins/webpack.html#installation") for your final build.
 
 ## :anger: Requirement
 
@@ -27,7 +28,7 @@ Here are the reasons you will love this boilerplate:
 1. Clone this repo. Rename it to whichever project name you want.
 2. `cd <project name>`
 3. Quickly initialize the project accepting the defaults `npm init -y`
-4. Run `npm i -D @babel/core @babel/plugin-proposal-class-properties @babel/preset-env autoprefixer babel-loader clean-webpack-plugin cross-env css-loader file-loader html-loader html-webpack-plugin mini-css-extract-plugin node-sass optimize-css-assets-webpack-plugin postcss-loader sass-loader style-loader webpack webpack-cli webpack-dashboard webpack-dev-server webpack-merge` to install afresh all dependencies
+4. Run `npm i -D @babel/core @babel/plugin-proposal-class-properties @babel/preset-env autoprefixer babel-loader clean-webpack-plugin cross-env css-loader file-loader html-loader html-webpack-plugin mini-css-extract-plugin node-sass optimize-css-assets-webpack-plugin postcss-loader purgecss-webpack-plugin sass-loader style-loader webpack webpack-cli webpack-dashboard webpack-dev-server webpack-merge` to install afresh all dependencies
 5. Open the package.json and replace the test script with the following scripts in the scripts section
 
    - `"start": "webpack-dev-server --mode development","smart:start": "webpack-dashboard -m webpack-dev-server --mode development","dev": "cross-env NODE_ENV=development webpack --mode development","build": "cross-env NODE_ENV=production webpack --mode production"`

@@ -1,8 +1,20 @@
 /**
+** Sample Component
 ** Auto Prefixer Works
 **/
 .not-selectable {
 	margin: 20px;
 	padding: 20px 40px;
 	user-select: none;
+}
+
+/**
+**	Unused Styles
+*/
+.not-used-selector {
+	background-color: rgb(172, 23, 23);
+}
+
+.another-not-used-selector {
+	background-color: rgb(23, 50, 172);
 }
