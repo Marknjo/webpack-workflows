@@ -1,0 +1,7 @@
+// Copy to CMD to have a fresh install of the project wit latest dependancies
+
+npm i -D @babel/core @babel/plugin-proposal-class-properties @babel/preset-env autoprefixer babel-loader clean-webpack-plugin cross-env css-loader file-loader html-loader html-webpack-plugin mini-css-extract-plugin node-sass optimize-css-assets-webpack-plugin postcss-loader sass-loader style-loader webpack webpack-cli webpack-dashboard webpack-dev-server webpack-merge
+
+
+//copy to Package.json: Scripts section after install 
+"start": "webpack-dev-server --mode development","smart:start": "webpack-dashboard -m webpack-dev-server --mode development","dev": "cross-env NODE_ENV=development webpack --mode development","build": "cross-env NODE_ENV=production  webpack --mode production"
