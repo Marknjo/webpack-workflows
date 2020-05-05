@@ -8,12 +8,12 @@ Will help to build any JavaScript oriented project with the support of SASS/CSS 
 
 Here are the reasons you will love this boilerplate:
 
-- **[Webpack](https://webpack.js.org/){:target="\_blank"}** - Modern bundling & build process
-- **[SASS/SCSS](https://sass-lang.com/){:target="\_blank"}** - The famous CSS on steroids
-- **[Autoprefixing](https://autoprefixer.github.io/){:target="\_blank"}** - Automatically adds vendors prefixes to your CSS
-- **[Babel Support](https://babeljs.io/){:target="\_blank"}** - Write JS using ES2015+ and webpack will make it work across all browsers. Support of **[class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties){:target="\_blank"}** is enabled too.
+- **[Webpack](https://webpack.js.org/)** - Modern bundling & build process
+- **[SASS/SCSS](https://sass-lang.com/)** - The famous CSS on steroids
+- **[Autoprefixing](https://autoprefixer.github.io/)** - Automatically adds vendors prefixes to your CSS
+- **[Babel Support](https://babeljs.io/)** - Write JS using ES2015+ and webpack will make it work across all browsers. Support of **[class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)** is enabled too.
 - **Minify** - Automatically minifies JS and CSS during production mode
-- **DevServer** - Use both ndefault dev server **[`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/){:target="\_blank"}** and pretty output on the console using **[`webpack-dashboard`](https://www.npmjs.com/package/webpack-dashboard){:target="\_blank"}**
+- **DevServer** - Use both ndefault dev server **[`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/)** and pretty output on the console using **[`webpack-dashboard`](https://www.npmjs.com/package/webpack-dashboard)**
 - **No need to update the dependencies** - Just follow the quick start quide and you'll be fine.
 - **Use any styling you want** - You can use both CSS or SASS to limitation.
 - **Separate your vendors from your code** - you don't like mixing your code with 3rd party's? Then this is your solution.
