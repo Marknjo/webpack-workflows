@@ -1,0 +1,48 @@
+{
+	"name": "webpack-workflows",
+	"version": "1.0.0",
+	"description": "Will help to build any JavaScript oriented project with the support of SASS/CSS fast. Also, since I have omitted the package.json file, it means that your initial build will always contain all the latest dependancied at the time of clone.",
+	"main": "postcss.config.js",
+	"scripts": {
+		"start": "webpack-dev-server --mode development",
+		"smart:start": "webpack-dashboard -m webpack-dev-server --mode development",
+		"dev": "cross-env NODE_ENV=development webpack --mode development",
+		"build": "cross-env NODE_ENV=production webpack --mode production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Marknjo/webpack-workflows.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Marknjo/webpack-workflows/issues"
+	},
+	"homepage": "https://github.com/Marknjo/webpack-workflows#readme",
+	"devDependencies": {
+		"@babel/core": "^7.9.6",
+		"@babel/plugin-proposal-class-properties": "^7.8.3",
+		"@babel/preset-env": "^7.9.6",
+		"autoprefixer": "^9.7.6",
+		"babel-loader": "^8.1.0",
+		"clean-webpack-plugin": "^3.0.0",
+		"cross-env": "^7.0.2",
+		"css-loader": "^3.5.3",
+		"file-loader": "^6.0.0",
+		"html-loader": "^1.1.0",
+		"html-webpack-plugin": "^4.3.0",
+		"mini-css-extract-plugin": "^0.9.0",
+		"node-sass": "^4.14.1",
+		"optimize-css-assets-webpack-plugin": "^5.0.3",
+		"postcss-loader": "^3.0.0",
+		"purgecss-webpack-plugin": "^2.1.2",
+		"sass-loader": "^8.0.2",
+		"style-loader": "^1.2.1",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.11",
+		"webpack-dashboard": "^3.2.0",
+		"webpack-dev-server": "^3.10.3",
+		"webpack-merge": "^4.2.2"
+	}
+}

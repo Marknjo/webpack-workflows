@@ -27,13 +27,12 @@ Here are the reasons you will love this boilerplate:
 
 1. Clone this repo. Rename it to whichever project name you want.
 2. `cd <project name>`
-3. Quickly initialize the project accepting the defaults `npm init -y`
-4. Run `npm i -D @babel/core @babel/plugin-proposal-class-properties @babel/preset-env autoprefixer babel-loader clean-webpack-plugin cross-env css-loader file-loader html-loader html-webpack-plugin mini-css-extract-plugin node-sass optimize-css-assets-webpack-plugin postcss-loader purgecss-webpack-plugin sass-loader style-loader webpack webpack-cli webpack-dashboard webpack-dev-server webpack-merge` to install afresh all dependencies
-5. Open the package.json and replace the test script with the following scripts in the scripts section
+3. Run `npm install`
+4. Open the package.json and replace the test script with the following scripts in the scripts section
 
    - `"start": "webpack-dev-server --mode development","smart:start": "webpack-dashboard -m webpack-dev-server --mode development","dev": "cross-env NODE_ENV=development webpack --mode development","build": "cross-env NODE_ENV=production webpack --mode production"`
 
-6. **YOU ARE READY TO GO**
+5. **YOU ARE READY TO GO**
 
 ## :volcano: Modes
 

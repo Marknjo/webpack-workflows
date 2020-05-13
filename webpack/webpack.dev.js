@@ -7,6 +7,7 @@ module.exports = merge(common, {
 		open: true,
 		hot: true,
 		port: 8080,
+		watchContentBase: true
 	},
 	devtool: "cheap-module-eval-source-map",
 	mode: "development",
