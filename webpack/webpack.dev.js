@@ -9,7 +9,7 @@ module.exports = merge(common, {
 		port: 8080,
 		watchContentBase: true
 	},
-	devtool: "cheap-module-eval-source-map",
+	devtool: "eval-cheap-module-source-map",
 	mode: "development",
 	output: {
 		filename: `[name].bundle.js`,
