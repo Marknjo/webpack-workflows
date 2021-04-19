@@ -18,6 +18,7 @@ Here are the reasons you will love this boilerplate:
 - **Use any styling you want** - You can use both CSS or SASS to limitation.
 - **Separate your vendors from your code** - you don't like mixing your code with 3rd party's? Then this is your solution.
 - **Remove Unused Styles** - Purify CSS/SCSS output using [`purgecss-webpack-plugin`]("https://purgecss.com/plugins/webpack.html#installation") for your final build.
+- Support for JavaScript, CSS, & SASS **Source Maps**.
 
 ## :anger: Requirement
 
