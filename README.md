@@ -2,7 +2,7 @@
 
 ## :balloon: Overview
 
-Will help to build any JavaScript oriented project with the support of SASS/CSS fast. Also, since I have omitted the package.json file, it means that your initial build will always contain all the latest dependancied at the time of clone. Also, I hate receiving dependency errors or npm updates. So, I have completely omitted the package.json file.
+Will help to build any JavaScript oriented project with the support of SASS/CSS fast.
 
 ## :mega: Features
 
@@ -10,10 +10,6 @@ Here are the reasons you will love this boilerplate:
 
 - **[Webpack](https://webpack.js.org/)** - Modern bundling & build process
 - **[SASS/SCSS](https://sass-lang.com/)** - The famous CSS on steroids
-- For SASS, the project uses [7-1 architecture pattern](http://sass-guidelin.es/#architecture) and sticking to [Sass Guidelines](http://sass-guidelin.es) writing conventions.
-
-Each folder of this project has its own `README.md` file to explain the purpose and add extra information. Be sure to browse the repository to see how it works(This folder structure of the acheitecture pattern is maintained by Kitty Giraudel **[Here](https://github.com/KittyGiraudel/sass-boilerplate)**.
-
 - **[Autoprefixing](https://autoprefixer.github.io/)** - Automatically adds vendors prefixes to your CSS
 - **[Babel Support](https://babeljs.io/)** - Write JS using ES2015+ and webpack will make it work across all browsers. Support of **[class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)** is enabled too.
 - **Minify** - Automatically minifies JS and CSS during production mode
@@ -33,11 +29,7 @@ Each folder of this project has its own `README.md` file to explain the purpose 
 1. Clone this repo. Rename it to whichever project name you want.
 2. `cd <project name>`
 3. Run `npm install`
-4. Open the package.json and replace the test script with the following scripts in the scripts section
-
-   - `"start": "webpack-dev-server --mode development","smart:start": "webpack-dashboard -m webpack-dev-server --mode development","dev": "cross-env NODE_ENV=development webpack --mode development","build": "cross-env NODE_ENV=production webpack --mode production"`
-
-5. **YOU ARE READY TO GO**
+4. **YOU ARE READY TO GO**
 
 ## :volcano: Modes
 
@@ -54,7 +46,7 @@ Each folder of this project has its own `README.md` file to explain the purpose 
     │   │   ├── images/                  # Image directory
     │   |   └── fonts/                   # Fonts directory
     │   ├── styles/                      # SCSS files
-    |   │   └── dirs/                    # SCSS directories (Follows 7-1 architecture pattern)
+    |   │   └── dirs/                    # SCSS directories (Group yours you own way)
     │   ├── scrips/                      # JS files
     |   │   ├── app/                     # Scripts related to your app
     │   |   └── vendors/                 # 3rd Party Scripts index (Vendors)
@@ -71,3 +63,7 @@ Each folder of this project has its own `README.md` file to explain the purpose 
     ├── postcss.config.js                # Post CSS configuration file. (Adds autoprefixing support)
     ├── README.md                        # You are reading this
     └── webpack.config.js                # Webpack main config file
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
