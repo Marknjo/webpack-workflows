@@ -10,6 +10,10 @@ Here are the reasons you will love this boilerplate:
 
 - **[Webpack](https://webpack.js.org/)** - Modern bundling & build process
 - **[SASS/SCSS](https://sass-lang.com/)** - The famous CSS on steroids
+- For SASS, the project uses [7-1 architecture pattern](http://sass-guidelin.es/#architecture) and sticking to [Sass Guidelines](http://sass-guidelin.es) writing conventions.
+
+Each folder of this project has its own `README.md` file to explain the purpose and add extra information. Be sure to browse the repository to see how it works(This folder structure of the acheitecture pattern is maintained by Kitty Giraudel **[Here](https://github.com/KittyGiraudel/sass-boilerplate)**.
+
 - **[Autoprefixing](https://autoprefixer.github.io/)** - Automatically adds vendors prefixes to your CSS
 - **[Babel Support](https://babeljs.io/)** - Write JS using ES2015+ and webpack will make it work across all browsers. Support of **[class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)** is enabled too.
 - **Minify** - Automatically minifies JS and CSS during production mode
@@ -50,7 +54,7 @@ Here are the reasons you will love this boilerplate:
     │   │   ├── images/                  # Image directory
     │   |   └── fonts/                   # Fonts directory
     │   ├── styles/                      # SCSS files
-    |   │   └── dirs/                    # SCSS directories (Group yours you own way)
+    |   │   └── dirs/                    # SCSS directories (Follows 7-1 architecture pattern)
     │   ├── scrips/                      # JS files
     |   │   ├── app/                     # Scripts related to your app
     │   |   └── vendors/                 # 3rd Party Scripts index (Vendors)
@@ -67,7 +71,3 @@ Here are the reasons you will love this boilerplate:
     ├── postcss.config.js                # Post CSS configuration file. (Adds autoprefixing support)
     ├── README.md                        # You are reading this
     └── webpack.config.js                # Webpack main config file
-
-## License
-
-[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
