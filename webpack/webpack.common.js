@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     new htmlWebpackPlugin({
       template: "./src/index.html",
+      scriptLoading: "defer",
     }),
     new DashboardPlugin(),
   ],

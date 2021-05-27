@@ -8,46 +8,46 @@ const PurgecssPlugin = require("purgecss-webpack-plugin");
 const glob = require("glob");
 const path = require("path");
 const PATHS = {
-	src: path.join(__dirname, "../src"),
+  src: path.join(__dirname, "../src"),
 };
 
 module.exports = merge(common, {
-	devtool: "hidden-source-map",
-	mode: "development",
+  devtool: "hidden-source-map",
+  mode: "development",
 
-	output: {
-		filename: `[name].[contenthash].bundle.js`,
-	},
+  output: {
+    filename: `[name].[contenthash].bundle.js`,
+  },
 
-	module: {
-		rules: [
-			{
-				test: /\.(sc|sa|c)ss$/,
-				use: [
-					MiniCssExtractPlugin.loader,
-					"css-loader",
-					"postcss-loader",
-					"sass-loader",
-				],
-			},
-		],
-	},
+  module: {
+    rules: [
+      {
+        test: /\.(sc|sa|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
+      },
+    ],
+  },
 
-	optimization: {
-		minimizer: [
-			new TerserJSPlugin({}),
-			new OptimizeCssAssestsWebpackPlugin({}),
-		],
-	},
+  optimization: {
+    minimizer: [
+      new TerserJSPlugin({}),
+      new OptimizeCssAssestsWebpackPlugin({}),
+    ],
+  },
 
-	plugins: [
-		new CleanWebpackPlugin(),
-		new MiniCssExtractPlugin({
-			filename: "[name].[contenthash].css",
-			chunkFilename: "[id].css",
-		}),
-		new PurgecssPlugin({
-			paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-		}),
-	],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
+      chunkFilename: "[id].css",
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+    }),
+  ],
 });
