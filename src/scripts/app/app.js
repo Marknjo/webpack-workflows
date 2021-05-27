@@ -17,6 +17,12 @@ const consoleSeparator = (title = "./END", separatorLen = 20) => {
   console.log("\n");
 };
 
+//////////////////////////////////////////////
+//                                          //
+//          Your Section Title Name         //
+//                                          //
+//////////////////////////////////////////////
+
 //
 //   Your Custom Separator
 ////////////////////////////////////////
