@@ -32,37 +32,26 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(svg|png|jpg|jpeg|gif)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "assests/images",
-          },
+        test: /\.(?:ico|svg|png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assests/images/[name].[hash].[ext]",
         },
       },
       {
         test: /\.(mp4|webm)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "assests/videos",
-          },
+        type: "asset/resource",
+        generator: {
+          filename: "assests/videos/[name].[hash].[ext]",
         },
       },
       {
         // Apply rule for fonts files
         test: /\.(woff|woff2|ttf|otf|eot)$/,
-        use: [
-          {
-            // Using file-loader too
-            loader: "file-loader",
-            options: {
-              outputPath: "assests/fonts",
-            },
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "assests/fonts/[name].[hash].[ext]",
+        },
       },
     ],
   },
