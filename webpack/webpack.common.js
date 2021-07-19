@@ -168,6 +168,8 @@ if (pagesPathExists) {
   console.log('\n');
 } else {
   console.log(chalk.blue('No pages found in the project!'));
+  console.timeEnd('Building Pages');
+  console.log('\n');
 
   multipleHtmlPlugins = [];
 }
