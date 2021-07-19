@@ -1,4 +1,3 @@
-const { HotModuleReplacementPlugin } = require('webpack');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
@@ -9,8 +8,8 @@ module.exports = merge(common, {
     compress: true,
     open: true,
     hot: true,
-    port: 8080,
-    watchContentBase: true,
+    port: 3000,
+    //watchContentBase: true,
   },
   devtool: 'eval-cheap-module-source-map',
   mode: 'development',
@@ -21,7 +20,6 @@ module.exports = merge(common, {
     new webpack.DefinePlugin({
       'process.env': JSON.stringify(dotenv.parsed),
     }),
-    new HotModuleReplacementPlugin(),
   ],
   module: {
     rules: [
